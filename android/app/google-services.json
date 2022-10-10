@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145461567543",
+    "project_id": "avans-selfreporting",
+    "storage_bucket": "avans-selfreporting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145461567543:android:282f97b69201bf542a5fb2",
+        "android_client_info": {
+          "package_name": "com.avans.selfreporting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145461567543-tl1ieu3isjbcatskbkna9vp08sjn2eq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKGvLvZFLZyAd6Hrq0bsdaW0Obo9bKyqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145461567543-tl1ieu3isjbcatskbkna9vp08sjn2eq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
