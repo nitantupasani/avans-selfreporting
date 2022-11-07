@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>467053404987-terci5r645khl2tlnqr7e1lbptcbt1ia.apps.googleusercontent.com</string>
+	<string>467053404987-156vra5qt9n9qvj79ijde5jkif3equdr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.467053404987-terci5r645khl2tlnqr7e1lbptcbt1ia</string>
+	<string>com.googleusercontent.apps.467053404987-156vra5qt9n9qvj79ijde5jkif3equdr</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCVjNos0fkit8cz4uEIWd2iZ2VbNOm4sBA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.nitantupasani.brains4buildings</string>
+	<string>com.nitantupasani.b4bhhsselfreporting</string>
 	<key>PROJECT_ID</key>
 	<string>apple-brains4buildings</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:467053404987:ios:f88e58a75cbbc1e1fc4d1e</string>
+	<string>1:467053404987:ios:8ba93766a9227127fc4d1e</string>
 </dict>
 </plist>
