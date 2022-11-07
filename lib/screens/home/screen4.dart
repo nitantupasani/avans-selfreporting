@@ -40,7 +40,7 @@ class _ScreenFourState extends State<ScreenFour> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Screen 4'),
+          title: Text('Brains for Buildings'),
           backgroundColor: Colors.green[800],
           elevation: 0.0,
         ),
