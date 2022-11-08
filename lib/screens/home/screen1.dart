@@ -392,7 +392,7 @@ class _ScreenOneState extends State<ScreenOne> {
                 ),
               ),
               SizedBox(height: 30.0),
-              Text('2. How did you come to the Avans today?',
+              Text('2. How did you come to the HHS today?',
                   style: TextStyle(
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold,
