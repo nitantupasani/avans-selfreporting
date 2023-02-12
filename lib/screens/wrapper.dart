@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:brains4buildings/globals.dart';
 import 'package:brains4buildings/screens/authenticate/authenticate.dart';
 import 'package:brains4buildings/screens/home/home.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +17,8 @@ class Wrapper extends StatefulWidget {
 class _WrapperState extends State<Wrapper> {
   @override
   Widget build(BuildContext context) {
-    final user = Provider.of<OurUser?>(context);
-    if (user == null) {
+    // final user = Provider.of<OurUser?>(context);
+    if (username == "") {
       return Authenticate();
     } else {
       return Home();
