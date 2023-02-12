@@ -1,8 +1,10 @@
+import 'package:brains4buildings/api/notifications_service.dart';
 import 'package:brains4buildings/screens/authenticate/sign_in.dart';
 import 'package:brains4buildings/screens/home/screen1.dart';
 import 'package:brains4buildings/screens/wrapper.dart';
 import 'package:flutter/material.dart';
 
+import '../../api/notifications_service.dart';
 import '../../globals.dart';
 import '../../services/auth.dart';
 import '../../services/database.dart';
@@ -40,7 +42,7 @@ class _ScreenFourState extends State<ScreenFour> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Brains for Buildings'),
+          title: Text('Brains for buildings'),
           backgroundColor: Colors.green[800],
           elevation: 0.0,
         ),
@@ -55,7 +57,7 @@ class _ScreenFourState extends State<ScreenFour> {
             ),
             SizedBox(height: 15),
             ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
                   setState(() {
                     mood = 0;
                   });
@@ -67,8 +69,8 @@ class _ScreenFourState extends State<ScreenFour> {
                   smelly = false;
                   stuffy = false;
                   beverage = 0;
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Wrapper()));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => ScreenOne()));
                 },
                 child: Text('Finish'))
           ]),

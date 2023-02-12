@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:brains4buildings/screens/home/screen1.dart';
 import 'package:brains4buildings/services/auth.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../globals.dart';
 
@@ -62,7 +64,13 @@ class _SignInState extends State<SignIn> {
                   style: ElevatedButton.styleFrom(primary: Colors.green[800]),
                   onPressed: user_name != ''
                       ? () async {
+                          final prefs = await SharedPreferences.getInstance();
                           username = user_name;
+                          await prefs.setString('USERNAME', user_name);
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ScreenOne()));
                           dynamic result = await _auth.signInAnon();
                           if (result == null) {
                             print('error signing in');

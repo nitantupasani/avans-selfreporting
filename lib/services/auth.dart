@@ -8,11 +8,14 @@ class AuthService {
 
   // create ouruser based on firebase user
 
-  OurUser? _userFromFirebaseUser(User user) {
+  OurUser? _userFromFirebaseUser(User? user) {
+    if (username == null) {
+      user = null;
+    }
     return user != null ? OurUser(uid: user.uid) : null;
   }
 
-  //auth change user stream
+  // auth change user stream
   Stream<OurUser?> get user {
     return _auth
         .authStateChanges()
